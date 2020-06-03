@@ -28,9 +28,10 @@ header h2 {
     font-size: 18px;
     text-align: center;
     color:white;
+    font-family: font-family: 'Noto Sans JP', 'Segoe UI', "メイリオ", Meiryo, sans-serif;;
 }
 
-.flex_test-box{
+.flex-box{
     display: flex;
 }
 
@@ -39,8 +40,9 @@ aside{
 }
 .sub-title {
     font-size: 1.375rem;
+    font-family: 'Noto Sans JP', 'Segoe UI', "メイリオ", Meiryo, sans-serif;
     padding: 0 8px 8px;
-    border-bottom: 2px #0bd solid;
+    border-bottom: 2px rgb(97, 141, 15) solid;
     font-weight: normal;
 }
 
@@ -65,17 +67,36 @@ aside{
 
 }
 
-main{
-    float: right;
-}
+
 
 .main-contants {
-    border: 2px solid rgb(201, 204, 204);
+    border: 2px solid rgb(2s01, 204, 204);
     overflow: scroll;
     width: 40em;
+    margin: 40px 80px 0 200px;
 
 }
 
 .main-contants h1{
+    font-family: fantasy;
+    font-size: 28px;
+}
+
+.main-contants p{
+    font-family: 'Noto Sans JP', 'Segoe UI', "メイリオ", Meiryo, sans-serif;
+    color: black;
+    font-size: 28px;
     text-align: center;
+}
+
+.shopinfo img{
+    width: 640px;
+    height: 480px;
+}
+
+
+.copyright p{
+    text-align: center;
+    background-color: sienna;
+    height: 40px;
 }

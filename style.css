@@ -9,7 +9,22 @@ header{
 
 }
 
-header h1 {
+header h1{
+    color: black;
+    font-family: font-family 'Palatino Linotype',sans-serif;
+    font-size: 48px;
+    border: 5px solid black;
+    width: 400px;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding:30px;
+    border-radius: 20px;
+}
+
+header h2 {
     font-size: 18px;
     text-align: center;
     color:white;
@@ -46,6 +61,7 @@ aside{
 .SNS-icon img{
     width: 40px;
     height: 40px;
+    float: left;
 
 }
 
@@ -53,4 +69,13 @@ main{
     float: right;
 }
 
+.main-contants {
+    border: 2px solid rgb(201, 204, 204);
+    overflow: scroll;
+    width: 40em;
 
+}
+
+.main-contants h1{
+    text-align: center;
+}

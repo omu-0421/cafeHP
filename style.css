@@ -1,34 +1,33 @@
-body{
-    background-color: antiquewhite;
+*{
+    margin: 0;
+    padding: 0%;
 }
+
+
 header{
     background-image: url("img/ヘッダー.jpg");
     height: 320px;
     background-size: cover;
     background-color:white;
-
 }
 
 header h1{
-    color: black;
-    font-family: font-family 'Palatino Linotype',sans-serif;
-    font-size: 48px;
-    border: 5px solid black;
-    width: 400px;
     text-align: center;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding:30px;
-    border-radius: 20px;
+    font-size: 40px;
+    
 }
+
+header p{
+    color: white;
+    text-align: center;
+}
+
 
 header h2 {
     font-size: 18px;
     text-align: center;
     color:white;
-    font-family: font-family: 'Noto Sans JP', 'Segoe UI', "メイリオ", Meiryo, sans-serif;;
+    font-family:'Noto Sans JP', 'Segoe UI', "メイリオ", Meiryo, sans-serif;
 }
 
 .flex-box{
@@ -37,6 +36,7 @@ header h2 {
 
 aside{
     float: left;
+    padding: 80px;
 }
 .sub-title {
     font-size: 1.375rem;
@@ -53,17 +53,23 @@ aside{
 
 .sub-menu li{
     border-bottom: 1px #ddd solid;
+    text-decoration: none;
 }
 
+
+.sub-menu a{
+    border-bottom: 1px #ddd solid;
+    text-decoration: none;
+    color: #221815;
+}
 .sub-menu a:hover{
-    color: #0bd;
+    color:olive;
 }
 
 
 .SNS-icon img{
     width: 40px;
     height: 40px;
-    float: left;
 
 }
 
@@ -79,24 +85,61 @@ aside{
 
 .main-contants h1{
     font-family: fantasy;
-    font-size: 28px;
+    font-size: 25px;
+    color: #221815;
+    background-color: #56453b;
+
 }
 
-.main-contants p{
+
+.text1 p{
     font-family: 'Noto Sans JP', 'Segoe UI', "メイリオ", Meiryo, sans-serif;
     color: black;
     font-size: 28px;
     text-align: center;
 }
 
-.shopinfo img{
-    width: 640px;
-    height: 480px;
+.news span{
+    color: red;
 }
 
+.news p{
+    font-size: 20px;
+}
+
+.text1{
+    border: 1px solid red;
+    text-align: center;
+}
+
+.text2{
+    margin-top: 40px;
+    border: 1px solid #221815;
+
+}
+
+.text2 p {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+footer {
+
+    background-color: #56453b;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
 
 .copyright p{
     text-align: center;
-    background-color: sienna;
-    height: 40px;
+    background-color: #29251F;
+    color: white;
+    height: 50px;
+    text-decoration: none;
 }
+

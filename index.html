@@ -1,83 +1,84 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sweet Market</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sweet Market</title>
 </head>
 <body>
- <header>
-   <h1>Sweet Market</h1>
-   
-   <p><strong>おいしいって、しあわせだ</strong><br>秋田市役所の近くにある小さなカフェです<br>秋田で取れた旬の食材とこだわりのコーヒーで皆様をお待ちしております。</p>
- </header>
- <aside>
-     <!--サイドバー-->
-     <h1 class="sub-title">カテゴリー</h1>
-     <ul class="sub-menu">
-      <li><a href="index.html">店舗情報</a></li>
-      <li><a href="index.html">お知らせ</a></li>
-      <li><a href="menu.html">メニュー</a></li>
+  <header>
+    <div class ="address">
+      <p>秋田市山王1-1-1</p>
+    </div>
+    <div class="message">
+      <p><strong>おいしいって　しあわせだ</strong><br>秋田市役所の近くにある小さなカフェです。<br>県内で取れた食材を使った、食事・デザート<br>こだわりのコーヒーで皆様をお待ちしております。</p>
+    </div>
+    </div>
+  </header>
+  <main>
+   <!--サイドバー-->
+   <aside>
+    <div class="side-ber">
+     <h1>カテゴリー</h1>
+      <ul class="sub-menu">
+        <li><a href="index.html">お知らせ</a></li>
+        <li><a href="index.html">店舗情報</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <!--SNSリンク-->
+        <div class ="SNS-icon">
+         <P>▼Follow Me!</P>
+         <li><a href="#"><img src="icons/facebookicon.png"></a></li>
+         <li><a href="#"><img src="icons/instagramicon.png"></a></li>
+         <li><a href="#"><img src="icons/twittericon.png"></a></li>
+      </ul>
+    </div>
+   </aside>
 
-      <!--↓<div class ="SNS-icon"></div>でくくればよい？ -->
-      <div class ="SNS-icon">
-       <P>▼Follow Me!</P>
-      <li><a href="#"><img src="icons/facebookicon.png"></a></li>
-      <li><a href="#"><img src="icons/instagramicon.png"></a></li>
-      <li><a href="#"><img src="icons/twittericon.png"></a></li>
-      </div>
-     </ul>
-
- </aside>
-
-    <div class="flex-box">
-      <!--メインエリア-->
-      <article>
-      <div class ="main-contants">
-
-      <div class="news">
-       <h1>お知らせ</h1>
+   <!--メインエリア-->
+   <div class ="Flex-box">
+    <article>
+　　 <div class="maincontainer">
+      <h1>お知らせ</h1>
        <div class="text1">
-       <p><span>コロナウィルスの対策実施中</span><br>■入店のお客様へのアルコール消毒の実施<br>
-        お客様来店時に際し、入り口で店舗スタッフによるお客様への<br>アルコール消毒を行ってから店内にご案内としております。</お客様来店時に際し、入り口で店舗スタッフによるお客様への>
-       </div>
-       <div class="text2">
+        <p><span>コロナウィルスの対策実施中</span><br>■入店のお客様へのアルコール消毒の実施<br>
+         お客様来店時に際し、入り口で店舗スタッフによるお客様への<br>アルコール消毒を行ってから店内にご案内としております。</br>
+         ■店舗従業員のアルコール消毒の実施<br>店舗従業員は30分後とに手洗い消毒かつ料理配膳時のアルコール消毒の徹底を行い、<br>お料理、ドリンク提供時商品提供時に手の消毒実施。お客様が帰った後、テーブル、椅子、メニューに関してアルコール消毒の徹底を行っております。</p>
+        </div>
+        <div class="text2">
          <p>■HPを更新しました（5/20）</p>
-       </div>
-
-          <div class="shopinfo">
-           <h1>店舗情報</h1>
+        </div>
+      <h1>店舗情報</h1>
+     　<div class="shopinfo">
         <dl>
-            <dt>店名</dt>
-            <dd>Sweet Market</dd>
-            <dt>住所</dt>
-            <dd>秋田市山王1-1-1</dd>
-            <dt>TLE</dt>
-            <dd>018-865-3031</dd>
-            <dt>営業時間</dt>
-            <dd>毎日11：00～16時(Lo/15:30)</dd>
+         <dt>店名</dt>
+         <dd>Sweet Market</dd>
+         <dt>住所</dt>
+         <dd>秋田市山王1-1-1</dd>
+         <dt>TLE</dt>
+         <dd>018-865-3031</dd>
+         <dt>営業時間</dt>
+         <dd>毎日11：00～16時(Lo/15:30)</dd>
         </dl>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.8781073712403!2d140.10134171537473!3d39.71992197945226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc2c4eb0270a9%3A0x7110fead5840ede8!2z44CSMDEwLTA5NTEg56eL55Sw55yM56eL55Sw5biC5bGx546L77yR5LiB55uu77yR4oiS77yRIOeni-eUsOW4guW6geiIjg!5e0!3m2!1sja!2sjp!4v1588815540535!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-
-      <div class="shopPhoto">
-       <h1>店舗の様子</h1>
-       <img src="img/外観.jpg" alt="お店外観">
-       <img src="img/内装.jpg" alt="お店内観">
-       <img src="img/cafeimage.jpg" alt="フード＆ドリンク">
-       </div>
-     </article>
+      </div>
+     <h1>店舗の様子</h1>
     </div>
- </div>
+   </article>
+  </div>
+  </main>
 
- <footer>
-　<a href="#">ページTOPに戻る</a>
-  <div class="copyright">
+  <footer>
+   <a href="#">ページTOPに戻る</a>
+   <div class="copyright">
     <p>(c)2020 Sweet Market</p>
- </footer>
-
- </div>
+   </div>
+  </footer>
 </body>
 </html>
+
+
+
+
+
 

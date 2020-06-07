@@ -65,6 +65,7 @@ article {
 }
 .sub-menu a {
     color: #432;
+    text-decoration: none;
     padding: 10px;
     display: block;
 }
@@ -73,11 +74,16 @@ article {
 }
 aside p {
     padding: 12px 10px;
+
 }
 
-.SNS-icon {
-    margin-top: 20px;
+.SNS-icon p {
+    color: white;
+    background-color: #56453b;
+    margin-bottom: 20px;
 }
+
+
 
 .SNS-icon img{
     width: 40px;

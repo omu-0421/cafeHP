@@ -17,6 +17,7 @@ header {
     background-color: #29251f;
     height: 20px;
 }
+
 .PageTitle {
     font-size: 70px;
     text-align: center;
@@ -49,12 +50,6 @@ article {
      margin-right: 80px;
 }
 
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10px;
-}
 
 .sub-menu {
     margin-bottom: 60px;

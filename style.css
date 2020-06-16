@@ -1,27 +1,30 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 header {
-    background-image: url("img/coffeevalley_ikebukuro_0_800.jpg");
+    background-image: url(img/coffeevalley_ikebukuro_0_800.jpg);
     height: 320px;
     margin-bottom: 40px;
     background-size: cover;
     background-color:white;
 }
 
-.address {
-    color: white;
-    text-align: center;
-    background-color: #29251f;
-    height: 20px;
-}
+.c-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 0 15px;
+  }
+
+
 .PageTitle {
     font-size: 70px;
     text-align: center;
 }
-
 
 .message {
     padding-top: 30px;
@@ -43,17 +46,47 @@ article {
 .main-contents {
     display: flex;
     flex-direction: row-reverse;
-     justify-content: space-between;
-     margin-bottom: 50px;
-     margin-left: 80px;
-     margin-right: 80px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
+.main-menu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.main-menu h1{
+    font-family: fantasy;
+    font-size: 25px;
+    color: white;
+    background-color: #56453b;
+    width: 700px;
+    padding: 0 10px;
+}
+
+.main-menu h2{
+    padding-top: 10px;
+}
+
+
+.main-menu span{
+    color: red;
+    text-align: center;
+}
 
 .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
+}
+
+.sub-title {
+    color: white;
+    background-color: #56453b;
+    padding-left: 1em;
 }
 
 .sub-menu {
@@ -77,57 +110,63 @@ aside p {
 
 }
 
-.SNS-icon p {
-    color: white;
-    background-color: #56453b;
-    margin-bottom: 20px;
-}
 
-
-
-.SNS-icon img{
-    width: 40px;
-    height: 40px;
-}
-
-.SNS-icon li{
-    list-style: none;
-}
-
-.main-menu h1{
-    font-family: fantasy;
-    font-size: 25px;
-    color: #221815;
-    background-color: #56453b;
-}
-
-.main-menu span{
-    color: red;
-    text-align: center;
-}
 
 .text1 p {
     border: 1px solid red;
+    width: 700px;
+    padding-left: 1em;
     margin-top: 20px;
 }
 
 .text2 p{
     border: 1px solid black;
+    width: 700px;
+    padding-left: 1em;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.shopPhoto img{
-    padding: 20PX;
-    width: 40%;
+.text3 {
+    padding-bottom: 2em;
 }
 
+.shopinfo dl{
+          background-image: linear-gradient(180deg, rgba(204, 204, 204, 0) 0%, rgba(204, 204, 204, 0) 98.5%, #646464 100%);
+          background-repeat: repeat-y;
+          background-size: 80% 2.4em;
+          line-height: 2.4;
+}
+
+.grid {
+    /*display: grid;*/
+    /*gap: 26px;*/
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+/*当店のコーヒーについての画像*/
+img {
+   width: 80%;
+}
 
 footer {
 
     background-color: #56453b;
     text-align: center;
 }
+
+footer p {
+    text-align: center;
+}
+
+footer li {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+
 
 footer a{
     color: white;
@@ -141,4 +180,3 @@ footer a{
     height: 50px;
     text-decoration: none;
 }
-

@@ -30,6 +30,7 @@ body{
 }
 /*終*/
 
+/*メイン始*/
 main{
     display: flex;
     min-height: 100vh;
@@ -71,8 +72,10 @@ main{
     font-size: 18px;
     background-color: #56453b;
     padding-left: 1em;
+    margin: 30px 0;
 
 }
+
 
 .content h2{
     font-size: 18px;
@@ -112,7 +115,7 @@ main{
     margin-right: 1em;
 }
 
-/*店舗情報*/
+/*googlemap*/
 .map{
     width: 640px;
     margin: auto;
@@ -122,6 +125,11 @@ main{
     flex-wrap: wrap;
 }
 
+iframe {
+    margin-left: 1em;
+}
+
+/*店舗情報*/
 .shopinfo{
     font-size: small;
     display: block;
@@ -130,9 +138,6 @@ main{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-
-
-
 
 dt{
     float: left;
@@ -147,14 +152,75 @@ dd{
     float: left;
 }
 
-iframe {
-    margin-left: 1em;
-}
-
-
 /*スワイプ*/
+.box {
+    position   : relative;
+    max-width  : 500px;
+    height     : 300px;
+    margin     : auto;
+    overflow   : hidden;
+  }
 
-/*終*/
+  /* --- 背景 ------------------------------------------- */
+  .box .bgImg {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    bottom     : 0;
+    right      : 0;
+    opacity    : 0;
+    animation  : bgAnime 20s infinite;   /* 4画像 × 各5s = 20s */
+  }
+
+  .box .src1 {
+    background-image : url(img/publicdomainq-0024424olf.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+  }
+  .box .src2 {
+    background-image : url(img/内装.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    animation-delay  : 5s;
+
+  }
+  .box .src3 {
+    background-image : url(img/cafeimage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    animation-delay  : 10s;
+
+  }
+  .box .src4 {
+    background-image : url(img/coffeevalley_ikebukuro_0_800.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    animation-delay  : 15s;
+
+  }
+
+  @keyframes bgAnime {
+     0% { opacity: 0; }
+     10% { opacity: 1; }
+    25% { opacity: 1; }
+    35% { opacity: 0; }
+   100% { opacity: 0; }
+  }
+
+
+/*
+#navi　>　div{
+	position: absolute;
+}
+#navi .hiden{
+	display: none;
+	z-index: 1;
+}
+#navi .active{
+	z-index: 10;
+}*/
+/*メイン終*/
 
 /*サイドバー*/
 .localNavigation {

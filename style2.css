@@ -1,0 +1,207 @@
+* {
+    
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/*ヘッダー～店舗名、メッセージ*/
+.header{
+    background-image: url(img/coffeevalley_ikebukuro_0_800.jpg);
+    height: 320px;
+    margin-bottom: 40px;
+    background-size: cover;
+    background-color:white;
+}
+
+.PageTitle {
+    font-size: 70px;
+    text-align: center;
+}
+
+.message {
+    padding-top: 30px;
+    text-align: center;
+    color: #56453b;
+}
+/*終*/
+
+main{
+    display: flex;
+    min-height: 100vh;
+    margin: 10px 0 10px 0;
+    right: 0px;
+}
+
+.content-area{
+    width:700px;
+    min-height:300px;
+    color : #000000;
+    margin-right: auto;
+    margin-left : auto;
+    margin-top:1.5%;
+    margin-bottom: 1.5%;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    border-radius: 15px;
+  }
+
+/*おしらせ*/
+  .text1 p {
+    border: 1px solid red;
+    width: 700px;
+    padding-left: 1em;
+    margin-top: 20px;
+}
+
+.text2 p{
+    border: 1px solid black;
+    width: 700px;
+    padding-left: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content h1{
+    color: #eee;
+    font-size: 18px;
+    background-color: #56453b;
+    padding-left: 1em;
+
+}
+
+.content h2{
+    font-size: 18px;
+}
+/*こだわり説明文*/
+
+.content p{
+    font-size: small;
+
+}
+
+.txt4{
+    font-size: small;
+    border-top:1px dotted #56453b;
+    margin: 10px 0 10px 0;
+    padding-top: 10px;
+}
+
+/*こだわりコーヒー画像*/
+#image1 {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 1em;
+}
+
+#image2 {
+    width: 300px;
+    height: 200px;
+    float: right;
+}
+
+#image3{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 1em;
+}
+
+/*店舗情報*/
+.map{
+    width: 640px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shopinfo{
+    font-size: small;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+
+dt{
+    float: left;
+
+}
+
+dd{
+    margin-left: 80px;
+}
+
+.Address{
+    float: left;
+}
+
+iframe {
+    margin-left: 1em;
+}
+
+
+/*スワイプ*/
+
+/*終*/
+
+/*サイドバー*/
+.localNavigation {
+    text-align: center;
+    color: #56453b;
+    width: 250px;
+}
+
+.localNavigation p{
+    font-size: 1.6em;
+    color: #eee;
+    background-color: #56453b;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.localNavigation li{
+    list-style: none;
+    text-align: left;
+    border-bottom: 1px #ddd solid;
+    padding: 1em;
+}
+
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+  }
+
+
+/*終*/
+
+
+
+/*おしり*/
+.footer{
+    height: 70px;
+    text-align: center;
+}
+
+.copyright p{
+    text-align: center;
+    background-color: #56453b;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+}
+
+/*終*/

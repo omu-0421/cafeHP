@@ -1,5 +1,4 @@
 * {
-    
     padding: 0;
     margin: 0;
 }
@@ -209,18 +208,6 @@ dd{
   }
 
 
-/*
-#navi　>　div{
-	position: absolute;
-}
-#navi .hiden{
-	display: none;
-	z-index: 1;
-}
-#navi .active{
-	z-index: 10;
-}*/
-/*メイン終*/
 
 /*サイドバー*/
 .localNavigation {
@@ -244,6 +231,17 @@ dd{
     padding: 1em;
 }
 
+.localNavigation a{
+    text-decoration: none;
+    color: #56453b;
+
+}
+.localNavigation a :hover{
+    color: olive;
+
+}
+
+
 
 .sticky {
     position: -webkit-sticky;
@@ -258,9 +256,22 @@ dd{
 
 /*おしり*/
 .footer{
-    height: 70px;
+    height: 100px;
     text-align: center;
 }
+
+.SNS-icon li {
+    list-style: none;
+    
+}
+
+.appIconBig{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
 
 .copyright p{
     text-align: center;

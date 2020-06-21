@@ -21,17 +21,17 @@
            <div class="sticky">
             <p>カテゴリ</p>
              <ul>
-              <li>お知らせ</li>
-              <li>当店のコーヒーについて</li>
+              <li><a href="#menu">お知らせ</a></li>
+              <li><a href="#section1">当店のコーヒーについて</a></li>
               <li><a href="menu.html">メニュー</a></li>
-              <li>店舗の様子</li>
-              <li>店舗情報</li>
+              <li><a href="#section2">店舗の様子</a></li>
+              <li><a href="#section3">店舗情報</a></li>
              </ul>
            </div>
         </div>
         <div class="content-area">
-            <div class="content">
-            　<h1>お知らせ</h1>
+          <div class="content">
+            　<h1 id="menu">お知らせ</h1>
             <div class="text1">
                 <p><span>コロナウィルスの対策実施中</span><br>■入店のお客様へのアルコール消毒の実施<br>
                  お客様来店時に際し、入り口で店舗スタッフによるお客様への<br>アルコール消毒を行ってから店内にご案内としております。</br>
@@ -41,7 +41,7 @@
                 <p>■HPを更新しました（5/20）</p>
             </div>
             <div class="content">
-            　<h1>当店のコーヒーについて</h1>
+            　<h1 id="section1">当店のコーヒーについて</h1>
             <h2>選び抜かれたコーヒー豆</h2>
             <img src="img/img08.jpg" id="image1" alt="コーヒー豆">
             <p class="txt1">お客様一人ひとりに本当においしいコーヒーをお届けするためには、抽出の技術だけでなく、<br>原料の品質からしっかりと考えなければなりません。
@@ -64,7 +64,7 @@
 
             <!--店舗の様子-->
             <div class="content">
-            　<h1>店舗の様子</h1>
+            　<h1 id="section2">店舗の様子</h1>
 
 
             <!--スワイプ-->
@@ -75,8 +75,8 @@
                 <div class="bgImg src4"></div>
               </div>
 
-            <div class="content">
-             <h1>店舗情報</h1>
+            <div class="content3">
+             <h1 id="section3">店舗情報</h1>
        　     <div class="shopinfo">
                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12275.472825147934!2d140.09304679820886!3d39.720144477601565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc3f232f48795%3A0x203d4c7b1a925a97!2z44CSMDEwLTA5NTEg56eL55Sw55yM56eL55Sw5biC5bGx546L77yR5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1592465069361!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                <dl class="Address">
@@ -92,19 +92,31 @@
             </div>
 
             </main>
-    <footer class="footer">
-   <!--SNSリンク-->
-   <div class ="SNS-icon">
-    <p>Follow me!!</p>
-    <ul>
-     <li><a href="#"><img src="icons/facebookicon.png" class="appIconBig"></a></li>
-     <li><a href="#"><img src="icons/instagramicon.png" class="appIconBig"></a></li>
-     <li><a href="#"><img src="icons/twittericon.png" class="appIconBig"></a></li>
-    </ul>
-  </div>
 
-  <div class="copyright">
-    <p>(c)2020 Sweet Market</p>
-  </div>
-    </footer>
+
+    <div id="footer">
+      <div class="footer-inner">
+       <div class="footer-wrapper">
+        <div class="footer-navi">
+          <ul class="footer-ul">
+            <li>カロリー・アレルギー一覧</li>
+            <li>お問い合わせ</li>
+            <li>アルバイト採用情報</li>
+            <li>ご利用規約</li>
+          </ul>
+        </div>
+       <div class ="SNS-icon">   <!--SNSリンク-->
+       <p>Follow me!!</p>
+       <ul>
+       <li><a href="#"><img src="icons/facebookicon.png" class="appIconBig"></a></li>
+       <li><a href="#"><img src="icons/instagramicon.png" class="appIconBig"></a></li>
+       <li><a href="#"><img src="icons/twittericon.png" class="appIconBig"></a></li>
+       </ul>
+      </div>
+      <div class="copyright">
+      <p>(c)2020 Sweet Market</p>
+      </div>
+    </div><!--フッターラッパー-->
+     </div><!--フッターインナー-->
+   </div>
 </body>

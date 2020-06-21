@@ -3,132 +3,195 @@
     margin: 0;
 }
 
-header {
-    background-image: url("img/coffeevalley_ikebukuro_0_800.jpg");
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/*ヘッダー～店舗名、メッセージ*/
+.header{
+    background-image: url(img/coffeevalley_ikebukuro_0_800.jpg);
     height: 320px;
     margin-bottom: 40px;
     background-size: cover;
     background-color:white;
 }
 
-.address {
-    color: white;
-    text-align: center;
-    background-color: #29251f;
-    height: 20px;
-}
 .PageTitle {
     font-size: 70px;
     text-align: center;
 }
 
-
 .message {
     padding-top: 30px;
     text-align: center;
-    color: #29251F;
+    color: #56453b;
 }
+/*終*/
 
-
-aside {
-    width: 22%;
-    order: 3;
-}
-
-article {
-    width: 74%;
-    order: 2;
-}
-
-.main-contents {
+/*メイン始*/
+main{
     display: flex;
-    flex-direction: row-reverse;
-     justify-content: space-between;
-     margin-bottom: 50px;
-     margin-left: 80px;
-     margin-right: 80px;
+    min-height: 100vh;
+    margin: 10px 0 10px 0;
+    right: 0px;
 }
 
+.content-area{
+    width:700px;
+    min-height:300px;
+    color : #000000;
+    margin-right: auto;
+    margin-left : auto;
+    margin-top:1.5%;
+    margin-bottom: 1.5%;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    border-radius: 15px;
+  }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 10px;
+/*menu*/
+#h1{
+    font-size: 22px;
+    color: #eee;
+    padding-left: 8px;
+    background-color: #56453b;
 }
 
-.sub-menu {
-    margin-bottom: 60px;
-    list-style: none;
+.main-menu p{
+    font-size: 18px;
+    padding-bottom: 5px;
 }
-.sub-menu li {
-    border-bottom: 1px #ddd solid;
+
+.Food-menu p{
+    border-bottom: 1px dotted #000000;
+    margin-bottom: 5px;
 }
-.sub-menu a {
-    color: #432;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
+
+.Drink-menu P{
+    border-bottom: 1px dotted #000000;
+    margin-bottom: 5px;
 }
-.sub-menu a:hover {
+
+.content h2{
+    font-size: 18px;
+}
+
+/*サイドバー*/
+.localNavigation {
+    text-align: center;
+    color: #56453b;
+    width: 250px;
+    border-right: 1px #56453b dotted;
+    padding-right:80px;
+}
+
+.localNavigation a:hover{
     color: olive;
 }
-aside p {
-    padding: 12px 10px;
-}
 
-.SNS-icon {
-    margin-top: 20px;
-}
-
-.SNS-icon p {
-    color: white;
+.localNavigation p{
+    font-size: 1.6em;
+    color: #eee;
     background-color: #56453b;
-    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 1em;
 }
 
+.localNavigation li{
+    list-style: none;
+    text-align: left;
+    border-bottom: 1px #ddd solid;
+    padding: 1em;
+}
 
-.SNS-icon img{
+.localNavigation a{
+    text-decoration: none;
+    color: #56453b;
+
+}
+.localNavigation a :hover{
+    color: olive;
+
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+  }
+
+
+/*終*/
+
+
+
+/*おしり*/
+
+/**SNSリンク*/
+.SNS-icon p{
+    color: #eee;
+    text-align: center;
+}
+
+.SNS-icon{
+
+    position: relative;
+    overflow: hidden;
+  }
+
+
+.SNS-icon ul {
+    position: relative;
+    left: 50%;
+    float: left;
+}
+.SNS-icon ul li {
+  position: relative;
+  left: -50%;
+  float: left;
+  list-style: none;
+}
+
+.appIconBig{
     width: 40px;
     height: 40px;
-}
+    display: block;
 
-.SNS-icon li{
-    list-style: none;
-}
+   }
 
-.main-menu h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    color: whitesmoke;
-    
+/*ここまで*/
+
+
+/*フッター*/
+.footer-inner{
     background-color: #56453b;
-    height: 40px;
-    padding-left: 10px;
+
+
 }
 
-.main-menu h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-
-
-footer {
-
-    background-color: #56453b;
+ul.footer-ul{
     text-align: center;
+    padding: 1em 0;
+
 }
 
-footer a{
+ul.footer-ul li{
+    color: #eee;
+    display: -moz-inline-box;
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+    padding-right: 1em;
+}
+
+#footer .copyright p{
+    text-align: center;
     color: white;
     text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
 }
 
-.copyright p{
-    text-align: center;
-    background-color: #29251F;
-    color: white;
-    height: 50px;
-    text-decoration: none;
-}
-
+/*完*/

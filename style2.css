@@ -71,13 +71,17 @@ main{
     font-size: 18px;
     background-color: #56453b;
     padding-left: 1em;
-    margin: 30px 0;
-
+    margin-bottom: 20px;
 }
 
 
 .content h2{
     font-size: 18px;
+}
+
+.content3 h1{
+    margin-top: 20px;
+
 }
 /*こだわり説明文*/
 
@@ -214,6 +218,12 @@ dd{
     text-align: center;
     color: #56453b;
     width: 250px;
+    border-right: 1px #56453b dotted;
+    padding-right:80px;
+}
+
+.localNavigation a:hover{
+    color: olive;
 }
 
 .localNavigation p{
@@ -255,20 +265,15 @@ dd{
 
 
 /*おしり*/
-.footer{
-    background-color: #56453b;
-    height: 300px;
 
-}
-
+/**SNSリンク*/
 .SNS-icon p{
     color: #eee;
     text-align: center;
 }
 
 .SNS-icon{
-    margin-top: 230px;
-    margin-bottom: 20px;
+
     position: relative;
     overflow: hidden;
   }
@@ -293,12 +298,36 @@ dd{
 
    }
 
-.copyright p{
-    text-align: center;
+/*ここまで*/
+
+.footer-inner{
     background-color: #56453b;
-    color: white;
-    height: 50px;
-    text-decoration: none;
+
+
 }
 
-/*終*/
+ul.footer-ul{
+    text-align: center;
+    padding: 1em 0;
+
+}
+
+ul.footer-ul li{
+    color: #eee;
+    display: -moz-inline-box;
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+    padding-right: 1em;
+}
+
+#footer .copyright p{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+/*完*/

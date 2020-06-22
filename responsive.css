@@ -1,11 +1,63 @@
-/*スマートフォンだけ以下を適用*/
-@media only　screen and (max-width: 480px) {
+@media screen and ( max-width:1024px)
+{
 
-     *{
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-     }
-
+    .header{
+        height: 320px;
+        background-image: url(img/coffeevalley_ikebukuro_0_800.jpg);
+        background-size:contain;
+        background-repeat: no-repeat;
     }
 
+    .PageTitle {
+        color: #eeeeee;
+        margin-top: 2em;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .message {
+        font-size: 8px;
+        text-align: center;
+        color: #eeeeee;
+    }
+
+    .content-area{
+        width:290px;
+        min-height:300px;
+        color : #000000;
+        margin-right: auto;
+        margin-left : auto;
+        margin-top:1.5%;
+        margin-bottom: 1.5%;
+        font-size: 1.6em;
+        line-height: 1.5em;
+        border-radius: 15px;
+      }
+    
+      .text1 p {
+        border: 1px solid red;
+        width: 280px;
+        padding-left: 1em;
+        margin-top: 20px;
+    }
+    
+    .text2 p{
+        border: 1px solid black;
+        width: 280px;
+        padding-left: 1em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .localNavigation {
+        text-align: center;
+        color: #56453b;
+        width: 250px;
+        border-right: 1px #56453b dotted;
+        display: none;
+        padding-right:80px;
+    }
+
+    ul.footer-ul{
+        font-size: 8px;
+    }
+}

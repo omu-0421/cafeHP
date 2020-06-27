@@ -38,7 +38,7 @@ main{
 }
 
 .content-area{
-    width:700px;
+    width:1200px;
     min-height:300px;
     color : #000000;
     margin-right: auto;
@@ -53,15 +53,14 @@ main{
 /*おしらせ*/
   .text1 p {
     border: 1px solid red;
-    width: 700px;
-    padding-left: 1em;
+    width: 1200px;
     margin-top: 20px;
 }
 
 .text2 p{
     border: 1px solid black;
-    width: 700px;
-    padding-left: 1em;
+    width: 1200px;
+    margin-right: 2em;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -118,14 +117,15 @@ main{
     margin-right: 1em;
 }
 
+
+
 /*googlemap*/
 .map{
     width: 640px;
     margin: auto;
-
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 iframe {
@@ -135,7 +135,8 @@ iframe {
 /*店舗情報*/
 .shopinfo{
     font-size: small;
-    display: block;
+    margin-left: 2em;
+    display: flex;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -152,6 +153,7 @@ dd{
 }
 
 .Address{
+    padding-left: 2em;
     float: left;
 }
 
@@ -217,9 +219,9 @@ dd{
 .localNavigation {
     text-align: center;
     color: #56453b;
-    width: 250px;
+    width: 400px;
     border-right: 1px #56453b dotted;
-    padding-right:80px;
+    padding-right:50px;
 }
 
 .localNavigation a:hover{
@@ -238,7 +240,7 @@ dd{
     list-style: none;
     text-align: left;
     border-bottom: 1px #ddd solid;
-    padding: 1em;
+    padding: 1em 0 1em 2em;
 }
 
 .localNavigation a{

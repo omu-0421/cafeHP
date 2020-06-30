@@ -1,0 +1,418 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,body {
+	height: 100%;
+}
+body {
+	font-size: 14px;
+	font-family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+	background: #eee;
+	-webkit-text-size-adjust: 100%;
+}
+
+
+#main {
+	background: #eee;
+	width: 80%;
+	margin: 0 auto;
+}
+#main-in {
+	padding-left: 260px;
+}
+#main p {
+	margin-bottom: 1em;
+	line-height: 1.9;
+}
+#main .inner {
+	padding: 60px;
+}
+
+
+.content h1{
+    color: #eee;
+    font-size: 18px;
+    background-color: #56453b;
+    padding-left: 1em;
+    margin-bottom: 20px;
+}
+
+/*おしらせ*/
+.text1 p {
+    border: 1px solid red;
+    margin-top: 20px;
+}
+
+.text2 p{
+	border: 1px solid black;
+    margin-right: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*こだわり画像*/
+.content #image1{
+    
+    width: 80%
+}
+
+.content #image2{
+	width: 80%
+
+}
+.content #image3{
+
+	width: 80%
+}
+
+/*こだわり画像終わり*/
+
+.box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.txt4{
+    font-size: small;
+    border-top:1px dotted #56453b;
+	margin: 10px 0 10px 0;
+	margin-top: 50px;
+    padding-top: 10px;
+}
+
+
+/* main-visual */
+#main-visual {
+    background-image: url(img/coffeevalley_ikebukuro_0_800.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 400px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+#main-visual h2 {
+	font-size: 50px;
+	padding-top: 100px;
+    color: #fff;
+    text-align: center;
+}
+#main-visual p{
+	font-size: 131%;
+	color: #fff;
+    margin-bottom: .7em;
+    text-align: center;
+}
+
+
+/* ここから */
+
+#sidebar {
+	font-size: 15px;
+	padding-top: 120px;
+	width: 260px;
+	height: 100%;
+	position: fixed;
+	color: #565656;
+	background: #fff;
+	text-align: center;
+}
+
+#global-nav ul {
+	list-style: none;
+	margin-left: 0;
+}
+#global-nav > ul > li {
+	position: relative;
+}
+
+#global-nav a {
+	color: olive;
+	text-decoration: none;
+	display: block;
+	padding: 15px 0;
+	-moz-transition: background-color .3s linear;
+	-webkit-transition: background-color .3s linear;
+	transition: background-color .3s linear;
+}
+#global-nav .sub-menu.is-active > a,
+#global-nav a:hover {
+	color: #fff;
+	background: #56453b;
+}
+
+#global-nav .sub-menu-nav a,
+#global-nav .sub-menu:hover .sub-menu-nav {
+	width: 230px;
+}
+
+/* sub-menu icon */
+#global-nav .sub-menu-head {
+	position: relative;
+}
+#global-nav .sub-menu-head:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 18px;
+	margin: auto;
+	vertical-align: middle;
+	width: 8px;
+	height: 8px;
+	border-top: 1px solid #033560;
+	border-right: 1px solid #033560;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+  }
+
+/* sub-menu */
+#global-nav .sub-menu-nav {
+	position: fixed;
+	background: #033560;
+	color: #fff;
+	top: 0;
+	padding-top: 90px;
+	left: 260px;
+	width: 0;
+	height: 100%;
+	overflow: hidden;
+
+	-moz-transition: width .2s ease-out;
+	-webkit-transition: width .2s ease-out;
+	transition: width .2s ease-out;
+}
+#global-nav .sub-menu.is-active > a:after,
+#global-nav .sub-menu-head:hover:after {
+	border-color: #fff;
+}
+#global-nav .sub-menu-nav a {
+	color: #fff;
+}
+#global-nav .sub-menu-nav a:hover {
+	color: #033560;
+	background: #fff;
+}
+
+
+/* nav-toggle */
+#nav-toggle {
+	display: none;
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	height: 32px;
+}
+#nav-toggle > div {
+	position: relative;
+	width: 32px;
+}
+#nav-toggle span {
+	width: 100%;
+	height: 2px;
+	left: 0;
+	display: block;
+	background: #033560;
+	position: absolute;
+	-webkit-transition: .35s ease-in-out;
+	-moz-transition: .35s ease-in-out;
+	transition: .35s ease-in-out;
+}
+
+#nav-toggle span:nth-child(1) {
+	top: 0;
+}
+#nav-toggle span:nth-child(2) {
+	top: 11px;
+}
+#nav-toggle span:nth-child(3) {
+	top: 22px;
+}
+
+
+#overlay {
+	display: none;
+	position: fixed;
+	background: rgba(0,0,0,.6);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+/*スワイプ*/
+.box {
+    position   : relative;
+    max-width  : 500px;
+    height     : 300px;
+    margin     : auto;
+    overflow   : hidden;
+  }
+
+  /* --- 背景 ------------------------------------------- */
+  .box .bgImg {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    bottom     : 0;
+    right      : 0;
+    opacity    : 0;
+    animation  : bgAnime 20s infinite;   /* 4画像 × 各5s = 20s */
+  }
+
+  .box .src1 {
+    background-image : url(img/publicdomainq-0024424olf.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+  }
+  .box .src2 {
+    background-image : url(img/内装.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    animation-delay  : 5s;
+
+  }
+  .box .src3 {
+    background-image : url(img/cafeimage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    animation-delay  : 10s;
+
+  }
+  .box .src4 {
+    background-image : url(img/coffeevalley_ikebukuro_0_800.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    animation-delay  : 15s;
+
+  }
+
+  @keyframes bgAnime {
+     0% { opacity: 0; }
+     10% { opacity: 1; }
+    25% { opacity: 1; }
+    35% { opacity: 0; }
+   100% { opacity: 0; }
+  }
+
+
+
+
+/*googlemap*/
+.map{
+    width: 640px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+iframe {
+    margin-left: 1em;
+}
+
+/*店舗情報*/
+.shopinfo{
+    font-size: 18px;
+    margin-left: 2em;
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.Address{
+    padding-left: 2em;
+    float: left;
+}
+/**SNSリンク*/
+.SNS-icon p{
+    color: #eee;
+    text-align: center;
+}
+
+.SNS-icon{
+
+    position: relative;
+    overflow: hidden;
+  }
+
+
+.SNS-icon ul {
+    position: relative;
+    left: 50%;
+    float: left;
+}
+.SNS-icon ul li {
+  position: relative;
+  left: -50%;
+  float: left;
+  list-style: none;
+}
+
+.appIconBig{
+    width: 40px;
+    height: 40px;
+    display: block;
+
+   }
+
+/*ここまで*/
+
+.footer-inner{
+    background-color: #56453b;
+
+
+}
+
+ul.footer-ul{
+    text-align: center;
+    padding: 1em 0;
+
+}
+
+ul.footer-ul li{
+    color: #eee;
+    display: -moz-inline-box;
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+    padding-right: 1em;
+}
+
+#footer .copyright p{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+/*完*/
+

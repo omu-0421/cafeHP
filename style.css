@@ -13,84 +13,19 @@
 html,body {
 	height: 100%;
 }
+
+
+
 body {
-	font-size: 14px;
+	width: 100%;
+	text-align: center;
 	font-family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 	background: #eee;
 	-webkit-text-size-adjust: 100%;
 }
 
 
-#main {
-	background: #eee;
-	width: 80%;
-	margin: 0 auto;
-}
-#main-in {
-	padding-left: 260px;
-}
-#main p {
-	margin-bottom: 1em;
-	line-height: 1.9;
-}
-#main .inner {
-	padding: 60px;
-}
-
-
-.content h1{
-    color: #eee;
-    font-size: 18px;
-    background-color: #56453b;
-    padding-left: 1em;
-    margin-bottom: 20px;
-}
-
-/*おしらせ*/
-.text1 p {
-    border: 1px solid red;
-    margin-top: 20px;
-}
-
-.text2 p{
-	border: 1px solid black;
-    margin-right: 2em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-/*こだわり画像*/
-.content #image1{
-    
-    width: 80%
-}
-
-.content #image2{
-	width: 80%
-
-}
-.content #image3{
-
-	width: 80%
-}
-
-/*こだわり画像終わり*/
-
-.box{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.txt4{
-    font-size: small;
-    border-top:1px dotted #56453b;
-	margin: 10px 0 10px 0;
-	margin-top: 50px;
-    padding-top: 10px;
-}
-
-
-/* main-visual */
+/* ヘッダー　main-visual */
 #main-visual {
     background-image: url(img/coffeevalley_ikebukuro_0_800.jpg);
     background-repeat: no-repeat;
@@ -118,17 +53,21 @@ body {
     text-align: center;
 }
 
+/* ここまで */
 
-/* ここから */
+#container{
+    display: flex;
+}
 
 #sidebar {
+	padding-top: 30px;
+	flex: 1;
 	font-size: 15px;
-	padding-top: 120px;
 	width: 260px;
 	height: 100%;
-	position: fixed;
+	position: -webkit-sticky;
+	position: sticky;
 	color: #565656;
-	background: #fff;
 	text-align: center;
 }
 
@@ -160,36 +99,8 @@ body {
 	width: 230px;
 }
 
-/* sub-menu icon */
-#global-nav .sub-menu-head {
-	position: relative;
-}
-#global-nav .sub-menu-head:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 18px;
-	margin: auto;
-	vertical-align: middle;
-	width: 8px;
-	height: 8px;
-	border-top: 1px solid #033560;
-	border-right: 1px solid #033560;
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 10px;
-  }
-
 /* sub-menu */
 #global-nav .sub-menu-nav {
-	position: fixed;
 	background: #033560;
 	color: #fff;
 	top: 0;
@@ -262,8 +173,109 @@ body {
 	right: 0;
 	bottom: 0;
 }
-/*スワイプ*/
-.box {
+/*サイドバー・ハンバーガー*/
+
+/*メイン*/
+main{
+	margin: 30px;
+	flex: 3
+}
+
+/*各コンテンツタイトル*/
+
+/*お知らせの所だけid*/
+.content #h1{
+	background-color: #56453b;
+	color: #eee;
+	font-size: 20px;
+	line-height: normal;
+	text-align: center;
+}
+.content .h1{
+	background-color: #56453b;
+	color: #eee;
+	font-size: 20px;
+	line-height: normal;
+	text-align: center;
+	margin-top:30px;
+	margin-bottom: 30px;
+}
+
+
+/*おしらせ*/
+.text1{
+ border: 1px solid red;
+ margin-bottom: 10px;
+ width: 640px;
+ margin: 0 auto;
+}
+
+.text2{
+ border: 1px solid #56453b;
+ width: 640px;
+ margin-top: 10px;
+ margin: 20px auto ;
+}
+/*こだわりコーヒー文章+画像*/
+
+/*サブタイアイコン*/
+#img{
+	width: 20px;
+	height: 20px;
+}
+.h2{
+	font-size: 20px;
+}
+
+/*テキスト画像*/
+#image1{
+	width: 30%;
+	float: left;
+
+}
+
+#image2{
+	width: 30%;
+	float: right;
+}
+
+#image3{
+	width: 30%;
+	float: left;
+	
+	margin-right: 50px;
+
+}
+/*テキスト*/
+
+.imgArea1 {
+	height: 200px;
+}
+
+.imgArea2 {
+	height: 300px;
+}
+.txt2{
+	margin-top: 100px;
+}
+
+.txt3{
+
+	margin-right:80px ;
+}
+.txt4{
+    font-size: small;
+    border-top:1px dotted #56453b;
+    margin: 100px 0 10px 0;
+    padding-top: 30px;
+}
+
+
+
+
+
+/*店舗の様子スライドショースワイプ*/
+.box{
     position   : relative;
     max-width  : 500px;
     height     : 300px;
@@ -272,6 +284,10 @@ body {
   }
 
   /* --- 背景 ------------------------------------------- */
+
+  .box{
+	  margin-bottom: 30px;
+  }
   .box .bgImg {
     position   : absolute;
     top        : 0;
@@ -306,7 +322,8 @@ body {
     background-image : url(img/coffeevalley_ikebukuro_0_800.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    animation-delay  : 15s;
+	animation-delay  : 15s;
+    
 
   }
 
@@ -318,38 +335,30 @@ body {
    100% { opacity: 0; }
   }
 
-
-
-
-/*googlemap*/
-.map{
-    width: 640px;
-    margin: auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-
-iframe {
-    margin-left: 1em;
-}
+/*スライドショー説明文*/
 
 /*店舗情報*/
-.shopinfo{
-    font-size: 18px;
-    margin-left: 2em;
-    display: flex;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+#shopinfo{
+	display: flex;
+	flex-direction: row;
+	flex-direction: row-reverse;
+
 }
 
+.google_map{
+	margin: 0 auto;
+	flex: 3;
+}
 
 .Address{
-    padding-left: 2em;
-    float: left;
+	flex: 1;
 }
+.Address dt{
+	float: left;
+}
+/*店舗情報終*/
+
+
 /**SNSリンク*/
 .SNS-icon p{
     color: #eee;

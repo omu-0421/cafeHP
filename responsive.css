@@ -13,13 +13,6 @@
 		padding-left: 0;
 	}
 
-	#global-head {
-		width: 100%;
-		padding: 10px;
-		background: rgba(255,255,255,.8);
-		display: -webkit-flex;
-		display: flex;
-	}
 
 	#sidebar {
 		/*display: none;*/
@@ -103,38 +96,27 @@
         width:100%;
         height:100%;
     }
-    
+
     /*店舗情報*/
-    .shopinfo{
+    #shopinfo{
+		display: flex;
+		flex-direction: column;
+		flex-direction: column-reverse;
         font-size: small;
-        margin-left: 2em;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-    }
-    
+
+	}
+	
+	.Address{
+		margin-bottom:30px;
+	}
     dt{
         float: left;
-    
     }
-    
     dd{
         margin-left: 80px;
 	}
-	
 	.footer-ul{
 		font-size: 10px;
 	}
-
-@media screen and (max-width: 400px) {
-	#sidebar {
-		right: -200px;
-		width: 200px;
-		padding-top: 60px;
-	}
-	.open #sidebar  {
-		-webkit-transform: translate3d(-200px,0,0);
-		transform: translate3d(-200px,0,0);
-	}
 }
+

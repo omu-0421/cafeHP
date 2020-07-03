@@ -1,87 +1,121 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="responsive.css">
-    <!--<script src="index.js"></script>-->
-    <title>Sweet Market</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<title>Sweet Market</title>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-    <header class="header">
-        <!--ヘッダータイトル-->
-     <h1 class="PageTitle">Sweet Market</h1>
-      <p class="message"><strong>おいしいって　しあわせだ</strong><br>秋田市役所の近くにある小さなカフェです。<br>県内で取れた食材を使った、食事・デザート<br>こだわりのコーヒーで皆様をお待ちしております。</p>
-     </h1>
-    </header>
-        <!--メイン-->
-    <main>
-      <div class="localNavigation">
-        <div class="sticky">
-         <p>カテゴリ</p>
-          <ul>
-           <li><a href="index2.html">お知らせ</a></li>
-           <li><a href="index2.html">当店のコーヒーについて</a></li>
-           <li><a href="menu.html">メニュー</a></li>
-           <li><a href="index2.html">店舗の様子</a></li>
-           <li><a href="index2.html">店舗情報</a></li>
-          </ul>
-        </div>
-     </div>
+
+<div id="nav-toggle"><!--ハンバーガーマーク-->
+	<div>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+<header>
+    <div id="main-visual">
+        <h2>Sweet Market</h2>
+        <p><strong>おいしいって　しあわせだ</strong><br>
+            秋田市役所の近くにある小さなカフェです。<br>
+            県内で取れた食材を使った、食事・デザート<br>
+            こだわりのコーヒーで皆様をお待ちしております。
+        </p>
+    </div>
+</header>
+
+<div id="container">
+ <aside id="sidebar">
+	<nav id="global-nav">
+		<ul>
+            <li><a href="#menu">お知らせ</a></li>
+            <li><a href="#section1">当店のコーヒーについて</a></li>
+            <li><a href="menu.html">メニュー</a></li>
+            <li><a href="#section2">店舗の様子</a></li>
+            <li><a href="#section3">店舗情報</a></li>
+        </ul>
+	</nav>
+ </aside>
+
+<main>
+    
      <!--メニュー-->
-      <div class="content-area">
-        <div class="main-contents wrapper">
-          <!--メインコンテンツ-->
-           <div class="main-menu">
-            <h1 id="h1">Food&amp;Drink Menu</h1>
-             <p>※表示価格は全て税抜きです。<br>
-               ※食物アレルギーをお持ちのお客様はスタッフへお声掛けくださいませ。</p>
-            <h2><img src="icons/フォークとナイフのお食事アイコン素材.jpeg">Food</h2>
-             <div class="Food-menu">
-              <p>■ガレット</p>
-              　<img src="img/galette01.png">
-              <p>■オーブン料理</p>
-                <img src="img/ovencooking01.png">
-              <p>■マウンテンケーキ</p>
-                <img src="img/mountaincake01.png">
-             </div>
-            <h2><img src="icons/コップアイコン.jpeg">Drink</h2>
-             <div class="Drink-menu">
-               <p>■コーヒー</p>
-               　<img src="img/coffee_drip.png">
-               <p>■ドリンク</p>
-               　<img src="img/drink01.png">
-             </div>
-      </div>
-    </main>
+     <div class="content-area">
+      <div class="main-contents wrapper">
+        <!--メインコンテンツ-->
+         <div class="main-menu">
+          <h1 id="h1">Food&amp;Drink Menu</h1>
+           <p>※表示価格は全て税抜きです。<br>
+             ※食物アレルギーをお持ちのお客様はスタッフへお声掛けくださいませ。</p>
+          <h2><img src="icons/フォークとナイフのお食事アイコン素材.jpeg">Food</h2>
+           <div class="Food-menu">
+            <p>■ガレット</p>
+            　<img src="img/galette01.png">
+            <p>■オーブン料理</p>
+              <img src="img/ovencooking01.png">
+            <p>■マウンテンケーキ</p>
+              <img src="img/mountaincake01.png">
+           </div>
+          <h2><img src="icons/コップアイコン.jpeg">Drink</h2>
+           <div class="Drink-menu">
+             <p>■コーヒー</p>
+             　<img src="img/coffee_drip.png">
+             <p>■ドリンク</p>
+             　<img src="img/drink01.png">
+           </div>
+    </div>
+  </main>
 
+</main>
+</div>
 
-    <div id="footer">
-      <div class="footer-inner">
-       <div class="footer-wrapper">
-        <div class="footer-navi">
-          <ul class="footer-ul">
-            <li>カロリー・アレルギー一覧</li>
-            <li>お問い合わせ</li>
-            <li>アルバイト採用情報</li>
-            <li>ご利用規約</li>
-          </ul>
-        </div>
-       <div class ="SNS-icon">   <!--SNSリンク-->
-       <p>Follow me!!</p>
-       <ul>
-       <li><a href="#"><img src="icons/facebookicon.png" class="appIconBig"></a></li>
-       <li><a href="#"><img src="icons/instagramicon.png" class="appIconBig"></a></li>
-       <li><a href="#"><img src="icons/twittericon.png" class="appIconBig"></a></li>
-       </ul>
+<div id="footer">
+    <div class="footer-inner">
+     <div class="footer-wrapper">
+      <div class="footer-navi">
+        <ul class="footer-ul">
+          <li>カロリー・アレルギー一覧</li>
+          <li>お問い合わせ</li>
+          <li>アルバイト採用情報</li>
+          <li>ご利用規約</li>
+        </ul>
       </div>
-      <div class="copyright">
-      <p>(c)2020 Sweet Market</p>
-      </div>
-    </div><!--フッターラッパー-->
-     </div><!--フッターインナー-->
-   </div>
+     <div class ="SNS-icon">   <!--SNSリンク-->
+     <p>Follow me!!</p>
+     <ul>
+     <li><a href="#"><img src="icons/facebookicon.png" class="appIconBig"></a></li>
+     <li><a href="#"><img src="icons/instagramicon.png" class="appIconBig"></a></li>
+     <li><a href="#"><img src="icons/twittericon.png" class="appIconBig"></a></li>
+     </ul>
+    </div>
+    <div class="copyright">
+    <p>(c)2020 Sweet Market</p>
+    </div>
 </body>
+</html>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+(function($) {
+    $(function () {
+        $('.sub-menu').on({
+            'mouseenter': function () {
+                $(this).addClass('is-active');
+            },
+            'mouseleave': function () {
+                $(this).removeClass('is-active');
+            }
+        });
+
+
+        $('#nav-toggle,#overlay').on('click', function() {
+            $('body').toggleClass('open');
+        });
+    });
+})(jQuery);
+</script>

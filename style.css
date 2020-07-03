@@ -173,7 +173,7 @@ body {
 	right: 0;
 	bottom: 0;
 }
-/*サイドバー・ハンバーガー*/
+/*サイドバー・ハンバーガー終*/
 
 /*メイン*/
 main{
@@ -225,36 +225,67 @@ main{
 }
 .h2{
 	font-size: 20px;
+	margin-bottom: 30px;
 }
 
 /*テキスト画像*/
+
 #image1{
 	width: 30%;
-	float: left;
+	margin-right: 50px;
 
+}
+
+.imgArea1 {
+	height: 280px;
+	display: flex;
+	flex-direction: row;
+}
+
+.imgArea1 p{
+	padding-top: 3em;
+	font-size: 15px;
+	text-align: left;
 }
 
 #image2{
 	width: 30%;
-	float: right;
-}
-
-#image3{
-	width: 30%;
-	float: left;
-	
-	margin-right: 50px;
-
-}
-/*テキスト*/
-
-.imgArea1 {
-	height: 200px;
+	margin-right: 60px;
 }
 
 .imgArea2 {
-	height: 300px;
+	height: 280px;
+	display: flex;
+	flex-direction: row-reverse;
 }
+
+.imgArea2 p{
+	font-size: 15px;
+	text-align: left;
+	float: left;
+	margin-right: 60px;
+}
+
+
+#image3{
+	width: 30%;
+	margin-right: 50px;
+
+}
+
+.imgArea3 {
+	height: 280px;
+	display: flex;
+	flex-direction: row;
+}
+
+.imgArea3 p{
+	padding-top: 3em;
+	font-size: 15px;
+	text-align: left;
+}
+/*テキスト*/
+
 .txt2{
 	margin-top: 100px;
 }
@@ -351,10 +382,13 @@ main{
 }
 
 .Address{
-	flex: 1;
+	width: 600px;
+	font-size: 20px;
+	margin:0 auto;
 }
 .Address dt{
-	float: left;
+	text-align: left;
+	
 }
 /*店舗情報終*/
 
@@ -424,4 +458,3 @@ ul.footer-ul li{
 }
 
 /*完*/
-

@@ -1,0 +1,179 @@
+@media screen and (max-width: 900px) {
+  * {
+      margin: 0;
+      padding: 0;
+}
+
+html,body {
+  height: 100%;
+
+}
+main {
+  background: #eee;
+  width: 320px;
+  margin: 0 auto;
+}
+
+#main-visual h2{
+font-size: 28px;
+}
+
+#main-visual p{
+font-size: 12px;
+}
+
+
+#sidebar {
+  /*display: none;*/
+  position: fixed;
+  right: -300px;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  color: #333;
+  background: #fff;
+  -webkit-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+}
+
+/* サブメニューは開けない */
+#global-nav .sub-menu-head:after,
+#global-nav .sub-menu-nav {
+  display: none;
+}
+#nav-toggle {
+  display: block;
+}
+
+/* nav open */
+.open {
+  overflow: hidden;
+}
+.open #overlay {
+  display: block;
+}
+.open #sidebar  {
+  -webkit-transform: translate3d(-300px,0,0);
+  transform: translate3d(-300px,0,0);
+}
+
+/* #nav-toggle close */
+.open #nav-toggle span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.open #nav-toggle span:nth-child(2) {
+  width: 0;
+  left: 50%;
+}
+.open #nav-toggle span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* z-index */
+#overlay {
+  z-index: 200;
+}
+#sidebar {
+  z-index: 300;
+}
+#nav-toggle {
+  z-index: 400;
+}
+.border{
+    border-left: 1px dotted #eee;
+    background-color: #eee;
+    width: 100%;
+
+}
+.top #h1{
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.top p{
+  font-size: 12px;
+  text-align: left;
+}
+
+.title h2{
+  font-size: 20px;
+}
+
+
+.content {
+  height: 400px;
+}
+.content1 #h1{
+	background-color: #56453b;
+	color: #eee;
+	font-size: 14px;
+	line-height: normal;
+  text-align: center;
+  margin-top: 10px;
+}
+.content .h1{
+	background-color: #56453b;
+	color: #eee;
+	font-size: 14px;
+	line-height: normal;
+	text-align: center;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+
+/*メニューイメージ*/
+
+#image1 img{
+padding: 10px 10px 0px 10px;
+width: 293px;
+height: 282px;
+
+}
+
+#image2 img{
+  padding: 10px 10px 10px 10px;
+  width: 293px;
+  height: 282px;
+}
+
+#image2 h1{
+  margin: 10;
+}
+
+#image3 img{
+  padding: 10px 10px 10px 10px;
+  width: 293px;
+  height: 282px;
+}
+
+#image4 img{
+  padding: 10px 10px 10px 10px;
+  width: 293px;
+  height: 282px;
+}
+
+#image5 img{
+  padding: 10px 10px 10px 10px;
+  width: 293px;
+  height: 282px;
+}
+
+.footer-ul{
+  font-size: 10px;
+}
+
+.appIconBig{
+  width: 30px;
+  height: 30px;
+  display: block;
+
+ }
+}
+

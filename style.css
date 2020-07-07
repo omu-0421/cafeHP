@@ -20,7 +20,7 @@ body {
 	width: 100%;
 	text-align: center;
 	font-family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-	background: #eee;
+	background: white;
 	-webkit-text-size-adjust: 100%;
 }
 
@@ -60,10 +60,10 @@ body {
 }
 
 #sidebar {
+	top: 0;
 	padding-top: 30px;
-	flex: 1;
 	font-size: 15px;
-	width: 260px;
+	width: 600px;
 	height: 100%;
 	position: -webkit-sticky;
 	position: sticky;
@@ -178,7 +178,14 @@ body {
 /*メイン*/
 main{
 	margin: 30px;
-	flex: 3
+	padding-left: 30px;
+	flex: 1;
+}
+
+.border{
+	border-left: 1px dotted #56453b;
+	padding-right: 50px;
+
 }
 
 /*各コンテンツタイトル*/
@@ -208,13 +215,15 @@ main{
  margin-bottom: 10px;
  width: 640px;
  margin: 0 auto;
+ padding: 20px;
 }
 
 .text2{
  border: 1px solid #56453b;
  width: 640px;
  margin-top: 10px;
- margin: 20px auto ;
+ margin: 20px auto;
+ padding: 10px;
 }
 /*こだわりコーヒー文章+画像*/
 
@@ -231,7 +240,6 @@ main{
 /*テキスト画像*/
 
 #image1{
-	width: 30%;
 	margin-right: 50px;
 
 }
@@ -249,7 +257,6 @@ main{
 }
 
 #image2{
-	width: 30%;
 	margin-right: 60px;
 }
 
@@ -268,7 +275,6 @@ main{
 
 
 #image3{
-	width: 30%;
 	margin-right: 50px;
 
 }

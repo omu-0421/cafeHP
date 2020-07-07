@@ -2,19 +2,28 @@
     * {
         margin: 0;
         padding: 0;
-    }
+}
 
-	#main {
+html,body {
+		height: 100%;
+		
+}
+main {
 		background: #eee;
 		width: 100%;
 		margin: 0 auto;
-	}
-	#main-in {
-		padding-left: 0;
-	}
+}
+
+#main-visual h2{
+	font-size: 28px;
+}
+
+#main-visual p{
+	font-size: 12px;
+}
 
 
-	#sidebar {
+#sidebar {
 		/*display: none;*/
 		position: fixed;
 		right: -300px;
@@ -25,69 +34,144 @@
 		background: #fff;
 		-webkit-transition: .35s ease-in-out;
 		transition: .35s ease-in-out;
-	}
+}
 
 	/* サブメニューは開けない */
-	#global-nav .sub-menu-head:after,
-	#global-nav .sub-menu-nav {
+#global-nav .sub-menu-head:after,
+#global-nav .sub-menu-nav {
 		display: none;
-	}
-	#nav-toggle {
+}
+#nav-toggle {
 		display: block;
-	}
+}
 
 	/* nav open */
-	.open {
+.open {
 		overflow: hidden;
-	}
-	.open #overlay {
+}
+.open #overlay {
 		display: block;
-	}
-	.open #sidebar  {
+}
+.open #sidebar  {
 		-webkit-transform: translate3d(-300px,0,0);
 		transform: translate3d(-300px,0,0);
-	}
+}
 
 	/* #nav-toggle close */
-	.open #nav-toggle span:nth-child(1) {
+.open #nav-toggle span:nth-child(1) {
 		top: 11px;
 		-webkit-transform: rotate(45deg);
 		-moz-transform: rotate(45deg);
 		transform: rotate(45deg);
-	}
-	.open #nav-toggle span:nth-child(2) {
+}
+.open #nav-toggle span:nth-child(2) {
 		width: 0;
 		left: 50%;
-	}
-	.open #nav-toggle span:nth-child(3) {
+}
+.open #nav-toggle span:nth-child(3) {
 		top: 11px;
 		-webkit-transform: rotate(-45deg);
 		-moz-transform: rotate(-45deg);
 		transform: rotate(-45deg);
-	}
+}
 
 	/* z-index */
-	#overlay {
+#overlay {
 		z-index: 200;
-	}
-	#sidebar {
+}
+#sidebar {
 		z-index: 300;
-	}
-	#nav-toggle {
+}
+#nav-toggle {
 		z-index: 400;
-	}
+}
+.border{
+	    border-left: 1px dotted white;
+}
 
- 
-    .content{
-        text-align: center;
-    }
+main{
+	 margin: 30px auto;
+}
 
 
-    .google_map{
-        position:relative;
-        width:100%;
-        height:0;
-        padding-top:75%;
+.content {
+	width: 320px;
+}
+
+/*お知らせ*/
+.text1{
+	width: 320px;
+	padding: 20px;
+	font-size: 12px;
+}
+
+.text2{
+	width: 320px;
+	padding: 10px;
+	font-size: 12px;
+}
+
+/*お知らせ終わり*/
+
+/*こだわり*/
+ .h2{
+	margin-bottom: 10px;
+	font-size: 15px;
+	float: left;
+}
+
+
+/*テキストエリア*/
+.imgArea1{
+	height: 500px;
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+}
+
+.imgArea1 p{
+ padding-top: 1em;
+ font-size: 12px;
+}
+
+.imgArea2{
+	height: 520px;
+	display: flex;
+	flex-direction: column;
+}
+
+.imgArea2 p{
+	width: 320px;
+	font-size: 12px;
+}
+
+.imgArea3{
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+}
+
+.imgArea3 p{
+	 width: 320px;
+	 font-size: 12px;
+}
+
+.txt4{
+	margin:10px 0 10px 0;
+	font-size: 12px;
+
+}
+
+#txt1 p{
+	font-size: 12px;
+}
+
+/*t店舗情報*/
+.google_map{
+    position:relative;
+    width:100%;
+    height:0;
+    padding-top:75%;
     }
     .google_map iframe{
         position:absolute;
@@ -98,25 +182,30 @@
     }
 
     /*店舗情報*/
-    #shopinfo{
+#shopinfo{
 		display: flex;
 		flex-direction: column;
 		flex-direction: column-reverse;
-        font-size: small;
+}
 
-	}
-	
-	.Address{
+
+.Address dt{
+	clear: left;
+	float: left;
+	width: 10%;
+}
+
+.Address dd{
+	max-width: 30%;
+}
+.Address{
+		font-size: 15px;
 		margin-bottom:30px;
-	}
-    dt{
-        float: left;
-    }
-    dd{
-        margin-left: 80px;
-	}
-	.footer-ul{
+}
+
+
+.footer-ul{
 		font-size: 10px;
-	}
+}
 }
 
